@@ -3,10 +3,10 @@ package models;
 public class StudentModel
 {
 
-	private long id;
-	private String name;
-	private String mail;
-	private String address;
+	private long 	id;
+	private String 	name;
+	private String 	mail;
+	private String 	address;
 
 	public StudentModel()
 	{
@@ -16,9 +16,9 @@ public class StudentModel
 	public StudentModel( String name , String mail , String address )
 	{
 
-		this.name = name;
-		this.mail = mail;
-		this.address = address;
+		this.name 		= name;
+		this.mail 		= mail;
+		this.address 	= address;
 
 	}
 
@@ -26,10 +26,10 @@ public class StudentModel
 	{
 
 		super();
-		this.id = id;
-		this.name = name;
-		this.mail = mail;
-		this.address = address;
+		this.id 		= id;
+		this.name 		= name;
+		this.mail 		= mail;
+		this.address 	= address;
 
 	}
 

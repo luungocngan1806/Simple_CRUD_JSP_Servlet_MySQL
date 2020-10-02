@@ -32,10 +32,10 @@ public class EditController extends HttpServlet
 	{
 
 		// Get data from form
-		long id = Long.parseLong( request.getParameter( "id" ) );
-		String name = request.getParameter( "name" );
-		String mail = request.getParameter( "mail" );
-		String address = request.getParameter( "address" );
+		long 	id 		= Long.parseLong( request.getParameter( "id" ) );
+		String	name 	= request.getParameter( "name" );
+		String 	mail 	= request.getParameter( "mail" );
+		String 	address = request.getParameter( "address" );
 		service.updateStudentById( id , name , mail , address );
 		response.sendRedirect( "/Simple_CRUD_JSP_Servlet_MySQL/Trang-chinh" );
 

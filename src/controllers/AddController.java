@@ -29,9 +29,9 @@ public class AddController extends HttpServlet
 			throws ServletException , IOException
 	{
 
-		String name = request.getParameter( "name" );
-		String mail = request.getParameter( "mail" );
-		String address = request.getParameter( "address" );
+		String name 	= request.getParameter( "name" );
+		String mail 	= request.getParameter( "mail" );
+		String address	= request.getParameter( "address" );
 		service.addNewStudent( name , mail , address );
 		response.sendRedirect( "/Simple_CRUD_JSP_Servlet_MySQL/Trang-chinh" );
 

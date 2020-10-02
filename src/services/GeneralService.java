@@ -12,9 +12,9 @@ public class GeneralService
 {
 
 	/*
-	 * - this method is used to display the view pages (jsp files)
-	 * - you need to pass request, response obj and path of jsp file should be
-	 * displayed
+	 * - This method is used to display the view pages (jsp files)
+	 * - You need to pass request, response object and path of jsp file should be
+	 * displayed.
 	 */
 	public void showView( HttpServletRequest request , HttpServletResponse response , String viewPath )
 			throws ServletException , IOException

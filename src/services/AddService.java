@@ -8,6 +8,10 @@ public class AddService extends GeneralService
 
 	StudentDAO dao = new StudentDAO();
 
+	/*
+	 * - This service will call 'DAO beans' to insert new student's information to the
+	 * database.
+	 */
 	public void addNewStudent( String name , String mail , String address )
 	{
 

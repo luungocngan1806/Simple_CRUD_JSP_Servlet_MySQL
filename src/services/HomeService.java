@@ -10,12 +10,12 @@ public class HomeService extends GeneralService
 	StudentDAO dao = new StudentDAO();
 
 	/*
-	 * - this service will call 'DAO beans' to query for a list that contains all of
-	 * the student information in the database
-	 * - but first, you must pass 'request obj' when calling this service.
-	 * 'request obj' will pass the previously queried list to the jsp file by 'set
-	 * the request attribute', then the jsp file can display that data in the view
-	 * page.
+	 * - This service will call 'DAO beans' to query a list that contains all of
+	 * the student's information in the database as a java object.
+	 * - But first, you must pass 'request object' when calling this service.
+	 * 'request objject' will pass the previously queried list to the jsp file by
+	 * 'set the request attribute', then the jsp file can display that data in the
+	 * view page by using JSTL lib.
 	 */
 	public void getAllStudents( HttpServletRequest request )
 	{
@@ -35,6 +35,10 @@ public class HomeService extends GeneralService
 
 	}
 
+	/*
+	 * - This service will call 'DAO beans' to delete the exact student's information in the
+	 * database by ID.
+	 */
 	public void deleteStudentById( long id )
 	{
 

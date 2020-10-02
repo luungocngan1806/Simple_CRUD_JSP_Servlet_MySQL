@@ -15,9 +15,9 @@ public class GeneralDAO
 	public Connection getConnection() throws InstantiationException , IllegalAccessException , ClassNotFoundException
 	{
 
-		String DB_URL = "jdbc:mysql://localhost:3306/schoolschema";
-		String USER_NAME = "root";
-		String PASSWORD = "LuungocnganA15041997";
+		String DB_URL 		= "jdbc:mysql://localhost:3306/schoolschema";
+		String USER_NAME 	= "root";
+		String PASSWORD 	= "LuungocnganA15041997";
 
 		try
 		{
@@ -40,14 +40,10 @@ public class GeneralDAO
 			List< StudentModel > students ) throws SQLException
 	{
 
-		if ( conn != null )
-			conn.close();
-		if ( preparedStatement != null )
-			preparedStatement.close();
-		if ( resultset != null )
-			resultset.close();
-		if ( students.isEmpty() == false )
-			students.clear();
+		if ( conn != null )					conn.close();
+		if ( preparedStatement != null )	preparedStatement.close();
+		if ( resultset != null )			resultset.close();
+		if ( students.isEmpty() == false )	students.clear();
 
 	}
 
@@ -83,13 +79,11 @@ public class GeneralDAO
 		while (resultSet.next())
 		{
 
-			long id = resultSet.getLong( 1 );
-			String name = resultSet.getString( 2 );
-			String mail = resultSet.getString( 3 );
-			String address = resultSet.getString( 4 );
-
-			StudentModel student = new StudentModel( id , name , mail , address );
-
+			long 			id 		= resultSet.getLong( 1 );
+			String 			name 	= resultSet.getString( 2 );
+			String 			mail 	= resultSet.getString( 3 );
+			String 			address = resultSet.getString( 4 );
+			StudentModel 	student = new StudentModel( id , name , mail , address );
 			list.add( student );
 
 		}

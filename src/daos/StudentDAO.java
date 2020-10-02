@@ -11,12 +11,12 @@ import java.util.List;
 public class StudentDAO extends GeneralDAO
 {
 
-	Connection conn;
-	ResultSet resultSet;
-	PreparedStatement preparedStatement;
-	List< StudentModel > students = new ArrayList<>();
+	Connection 				conn;
+	ResultSet 				resultSet;
+	PreparedStatement 		preparedStatement;
+	List< StudentModel > 	students = new ArrayList<>();
 
-	// This method is used to add new student information to the database
+	// This method is used to add new student's information to the database
 	public void save( String name , String mail , String address )
 			throws SQLException , InstantiationException , IllegalAccessException
 	{
@@ -55,7 +55,7 @@ public class StudentDAO extends GeneralDAO
 	}
 
 	/*
-	 * This method is used to query all the student information stored in the
+	 * This method is used to query all the student's information stored in the
 	 * database. then convert the data to java object, add that java object to a
 	 * list and return that list to the services calling this method.
 	 */
@@ -97,7 +97,7 @@ public class StudentDAO extends GeneralDAO
 	}
 
 	/*
-	 * This method is used to query the exact student information that you need in
+	 * This method is used to query the exact student's information that you need in
 	 * database. then convert the data to java object and return that object to the
 	 * services calling this method.
 	 */
@@ -141,7 +141,7 @@ public class StudentDAO extends GeneralDAO
 	}
 
 	/*
-	 * This method is used to update the exact student information that you need in
+	 * This method is used to update the exact student's information that you need in
 	 * database by ID
 	 */
 	public void updateStudentById( long id , String name , String mail , String address ) throws SQLException
@@ -180,7 +180,7 @@ public class StudentDAO extends GeneralDAO
 
 	}
 
-	// This method is used to delete the exact student information in the database
+	// This method is used to delete the exact student's information in the database
 	// by ID
 	public void deleteStudentById( long id ) throws SQLException
 	{
