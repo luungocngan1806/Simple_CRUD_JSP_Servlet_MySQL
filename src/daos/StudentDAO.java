@@ -140,6 +140,10 @@ public class StudentDAO extends GeneralDAO
 
 	}
 
+	/*
+	 * This method is used to update the exact student information that you need in
+	 * database by ID
+	 */
 	public void updateStudentById( long id , String name , String mail , String address ) throws SQLException
 	{
 

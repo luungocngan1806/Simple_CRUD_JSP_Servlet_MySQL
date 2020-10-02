@@ -12,7 +12,7 @@ import java.util.List;
 public class GeneralDAO
 {
 
-	public Connection getConnection() throws InstantiationException , IllegalAccessException, ClassNotFoundException
+	public Connection getConnection() throws InstantiationException , IllegalAccessException , ClassNotFoundException
 	{
 
 		String DB_URL = "jdbc:mysql://localhost:3306/schoolschema";
@@ -21,7 +21,8 @@ public class GeneralDAO
 
 		try
 		{
-			Class.forName ("com.mysql.cj.jdbc.Driver");
+
+			Class.forName( "com.mysql.cj.jdbc.Driver" );
 			Connection conn = DriverManager.getConnection( DB_URL , USER_NAME , PASSWORD );
 			return conn;
 
@@ -50,7 +51,7 @@ public class GeneralDAO
 
 	}
 
-	public PreparedStatement setParams( PreparedStatement preparedStatement , Object... params ) throws SQLException
+	public void setParams( PreparedStatement preparedStatement , Object... params ) throws SQLException
 	{
 
 		for ( int index = 1 ; index <= params.length ; index++ )
@@ -71,7 +72,6 @@ public class GeneralDAO
 			}
 
 		}
-		return null;
 
 	}
 

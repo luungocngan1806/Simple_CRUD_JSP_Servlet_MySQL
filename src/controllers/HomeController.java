@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 public class HomeController extends HttpServlet
 {
 
+	private static final long serialVersionUID = 1L;
 	HomeService service = new HomeService();
 
 	@Override

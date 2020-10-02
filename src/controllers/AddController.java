@@ -12,6 +12,7 @@ import services.AddService;
 public class AddController extends HttpServlet
 {
 
+	private static final long serialVersionUID = 1L;
 	AddService service = new AddService();
 
 	@Override

@@ -12,6 +12,7 @@ import services.EditService;
 public class EditController extends HttpServlet
 {
 
+	private static final long serialVersionUID = 1L;
 	EditService service = new EditService();
 
 	@Override
